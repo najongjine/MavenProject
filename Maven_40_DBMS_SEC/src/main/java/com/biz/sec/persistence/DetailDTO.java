@@ -1,7 +1,5 @@
 package com.biz.sec.persistence;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,12 +13,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Builder
-public class MasterDetailVO {
+public class DetailDTO {
+
+	private long d_seq;
+	private long d_m_seq; // Master table과 연계(Replation)을 수행하는 Key
+	private String d_subject;
+	private String d_ok;
 	
-	//tbl_master
-	private long m_seq;
-	private String m_subject;
-	
-	//tbl_detail
-	private List<DetailDTO> deList;
 }

@@ -1,7 +1,5 @@
 package com.biz.sec.persistence;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,12 +13,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Builder
-public class MasterDetailVO {
-	
-	//tbl_master
+public class MasterDTO {
+
 	private long m_seq;
 	private String m_subject;
 	
-	//tbl_detail
-	private List<DetailDTO> deList;
 }
+
+
+
